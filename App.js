@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import BottomNav from './src/components/BottomNav.js';
+import PrimaryButton from './src/components/Buttons.js'
 
 //Icons
 import accounticon from './src/components/assets/Account.svg';

@@ -1,50 +1,14 @@
 import React from 'react';
-import styled from 'styled-components/native'
+import styled from 'styled-components/native';
+import { View, TouchableOpacity, Text } from 'react-native';
 
-
-
-export default function Button({ children, theme, onClick, disabled }) {
-  console.log(children);
-  const renderButton = () => {
-    switch (theme) {
-      case "primary":
-        return (
-          <PrimaryButton onClick={onClick} disabled={disabled}>
-            {children}
-          </PrimaryButton>
-        );
-      case "secondary":
-        return (
-          <SecondaryButton onClick={onClick} disabled={disabled}>
-            {children}
-          </SecondaryButton>
-        );
-      case "tertiary":
-        return (
-          <TertiaryButton onClick={onClick} disabled={disabled}>
-            {children}
-          </TertiaryButton>
-        );
-      default:
-        return (
-          <PrimaryButton onClick={onClick} disabled={disabled}>
-            {children}
-          </PrimaryButton>
-        );
-    }
-  };
-
-  return <>{renderButton()}</>;
-}
-
-export const PrimaryButton = styled.button`
-  border: 1px solid #BDBDBD;
-  box-sizing: border-box;
+const StyledPrimaryButton = styled.TouchableOpacity`
+  height: 48px;
+  width: 142px;
+  margin-left: 24px;
+  margin-top: 24px;
   border-radius: 8px;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.5em 1em;
-  border-radius: 4px;
+
   background: #616161;
   color: #fff;
   &:disabled {
@@ -52,62 +16,45 @@ export const PrimaryButton = styled.button`
     color: #F8F8F8;
   }
 `
-export const SecondaryButton = styled.button`
-border: 1px solid #BDBDBD;
-box-sizing: border-box;
-border-radius: 8px;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  background: #616161;
+const StyledButtonText = styled.Text`
+  align-self: center;
   color: #fff;
   &:disabled {
-    background: #F8F8F8;
-    color: #9E9E9E;
+    background: #9E9E9E;
+    color: #F8F8F8;
   }
 `
-export const TertiaryButton = styled.button`
-border: 1px solid #BDBDBD;
-box-sizing: border-box;
-border-radius: 8px;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  background: #616161;
-  color: #fff;
-`
-
-// export default function PrimaryButton({ text, onPress }) {
-//     return (
-//       <TouchableOpacity onPress={onPress}>
-//         <View style={styles.button}>
-//           <Text style={styles.buttonText}>{text}</Text>
-//         </View>
-//       </TouchableOpacity>
-//     );
+// export const SecondaryButton = styled.button`
+// border: 1px solid #BDBDBD;
+// box-sizing: border-box;
+// border-radius: 8px;
+//   font-size: 1em;
+//   margin: 1em;
+//   padding: 0.5em 1em;
+//   border-radius: 4px;
+//   background: #616161;
+//   color: #fff;
+//   &:disabled {
+//     background: #F8F8F8;
+//     color: #9E9E9E;
 //   }
-  
-//   const styles = StyleSheet.create({
-//     button: {
-//       borderRadius: 8,
-//       paddingVertical: 12,
-//       paddingHorizontal: 24,
-//       border: 1,
-//       backgroundColor: '#f01d71',
-//       height: 48,
-//       width: 142,
-//       left: 24,
-//       top: 24,
-//       padding: 12,
+// `
+// const TertiaryButton = styled.button`
+// border: 1px solid #BDBDBD;
+// box-sizing: border-box;
+// border-radius: 8px;
+//   font-size: 1em;
+//   margin: 1em;
+//   padding: 0.5em 1em;
+//   border-radius: 4px;
+//   background: #616161;
+//   color: #fff;
+// `
 
-//     },
-//     buttonText: {
-//       color: 'white',
-//       fontWeight: 'bold',
-//       textTransform: 'uppercase',
-//       fontSize: 17,
-//       textAlign: 'center',
-//     }
-//   });
+export function PrimaryButton( ) {
+  return (
+      
+      <StyledPrimaryButton><StyledButtonText>Primary</StyledButtonText></StyledPrimaryButton>
+      
+  )
+}

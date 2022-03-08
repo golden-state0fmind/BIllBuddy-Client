@@ -5,7 +5,7 @@ import groups from './assets/Groups.png';
 const ExpensesBoxContainer = styled.View`
 width: 358px;
 height: 151px;
-border: 2px solid #BDBDBD;
+border: 2px #BDBDBD;
 margin: 20px;
 display: flex;
 background-color: #F5F5F5;
@@ -108,7 +108,7 @@ margin-left: 16px;
 margin-right: 16px;
 `
 
-export function TripBoxExpenses() {
+export function TripBoxExpensesFinal() {
     return (
         <ExpensesBoxContainer>
             <ExpensesBoxInnerContainer>
