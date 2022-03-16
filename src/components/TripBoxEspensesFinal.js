@@ -6,7 +6,10 @@ const ExpensesBoxContainer = styled.View`
 width: 358px;
 height: 151px;
 border: 2px #BDBDBD;
-margin: 20px;
+margin-left: 16px;
+margin-right: 16px;
+margin-top: 8px;
+margin-bottom: 8px;
 display: flex;
 background-color: #F5F5F5;
 `
@@ -38,7 +41,7 @@ margin-right: 12px;
 const ExpensesBoxTitle = styled.Text`
 width: 237px;
 height: 26px;
-font-family: SF Pro;
+font-family: 'System';
 font-style: normal;
 font-weight: 700;
 font-size: 21px;
@@ -49,7 +52,7 @@ color: #212121;
 const ExpensesBoxGroupTitle = styled.Text`
 width: 237px;
 height: 20px;
-font-family: SF Pro;
+font-family: 'System';
 font-style: normal;
 font-weight: 700;
 font-size: 13.5px;
@@ -78,7 +81,7 @@ const DateContainer = styled.Text`
 height: 17px;
 width: 39px;
 margin-bottom: 29px;
-font-family: SF Pro;
+font-family: 'System';
 font-size: 14px;
 text-align: left;
 `
@@ -86,7 +89,7 @@ text-align: left;
 const ExpensesContainer = styled.Text`
 width: 326px;
 height: 26px;
-font-family: SF Pro;
+font-family: 'System';
 font-weight: 400;
 font-size: 17px;
 color: #7A7A7A;
@@ -99,7 +102,7 @@ margin-right: 16px;
 const FriendsContainer = styled.Text`
 width: 326px;
 height: 20px;
-font-family: SF Pro;
+font-family: 'System';
 font-weight: 400;
 font-size: 13.5px;
 color: #BDBDBD;
