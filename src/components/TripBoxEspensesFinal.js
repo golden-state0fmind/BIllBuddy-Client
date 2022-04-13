@@ -12,6 +12,7 @@ margin-top: 8px;
 margin-bottom: 8px;
 display: flex;
 background-color: #F5F5F5;
+border-radius: 8px;
 `
 
 const ExpensesBoxInnerContainer = styled.View`
@@ -28,8 +29,6 @@ margin-top: 6px;
 margin-left: 16px;
 margin-right: 16px;
 flex-direction:row;
-
-
 `
 
 const TitleContainer = styled.View`
