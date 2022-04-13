@@ -4,9 +4,13 @@ import { Image } from 'react-native';
 const ExpensesBoxContainer = styled.View`
 width: 358px;
 height: 106px;
-margin: 20px;
+margin-left: 16px;
+margin-right: 16px;
+margin-top: 8px;
+margin-bottom: 8px;
 display: flex;
 background-color: #F5F5F5;
+border-radius: 8px;
 `
 
 const ExpensesBoxInnerContainer = styled.View`
@@ -34,7 +38,7 @@ margin-right: 12px;
 const ExpensesBoxTitle = styled.Text`
 width: 237px;
 height: 26px;
-font-family: SF Pro;
+font-family: 'System';
 font-style: normal;
 font-weight: 700;
 font-size: 21px;
@@ -45,7 +49,7 @@ color: #212121;
 const ExpensesBoxGroupTitle = styled.Text`
 width: 237px;
 height: 20px;
-font-family: SF Pro;
+font-family: 'System';
 font-style: normal;
 font-weight: 700;
 font-size: 13.5px;
@@ -74,7 +78,7 @@ const DateContainer = styled.Text`
 height: 17px;
 width: 39px;
 margin-bottom: 29px;
-font-family: SF Pro;
+font-family: 'System';
 font-size: 14px;
 text-align: left;
 `
@@ -82,7 +86,7 @@ text-align: left;
 const FriendsContainer = styled.Text`
 width: 326px;
 height: 20px;
-font-family: SF Pro;
+font-family: 'System';
 font-weight: 400;
 font-size: 13.5px;
 color: #BDBDBD;
@@ -98,7 +102,7 @@ export function TripBoxExpenses() {
             <ExpensesBoxInnerContainer>
                 <HeaderContainer>
                     <TitleContainer>
-                        <ExpensesBoxTitle>Steak dinner</ExpensesBoxTitle>
+                        <ExpensesBoxTitle>Omelettes</ExpensesBoxTitle>
                         <ExpensesBoxGroupTitle>San Fran Trip!</ExpensesBoxGroupTitle>
                     </TitleContainer>
                     <InfoContainer>
