@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { TextInpu, Button } from 'react-native-gesture-handler';
+import { TextInput, Button } from 'react-native-gesture-handler';
 
 
 export  const ProfilePicture  = styled.View`
