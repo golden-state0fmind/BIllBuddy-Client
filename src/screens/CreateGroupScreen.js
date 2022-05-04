@@ -4,7 +4,7 @@ import { AccountBox } from '../components/AccountBox';
 
 export default function CreateGroupScreen() {
     return (
-      <View style={{ flex: 1,  backgroundColor: "#fff" }}>
+      <View >
         <Text>Create Group Screen</Text>
       </View>
     );
