@@ -5,16 +5,16 @@ import { Image } from 'react-native';
 const CalculatedExpensesContainer = styled.View`
 height: 124px;
 width: 358px;
-margin-left: 16px;
-margin-right: 16px;
 margin-top: 8px;
 margin-bottom: 8px;
+align-self: center;
 background-color: #FFFFFF;
 align-items: center;
 display: flex;
 flex-direction: row;
 border-radius: 8px;
 box-shadow: 0px 4px #00000040;
+
 `
 
 const BalanceSummaryContainer = styled.View`

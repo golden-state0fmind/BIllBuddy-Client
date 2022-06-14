@@ -21,7 +21,6 @@ export default function HomeScreen() {
         <CreateBoxes />
         <RecentExpenses />
       </ScrollView>
-      <AddExpenseBar />
     </View>
   );
 }

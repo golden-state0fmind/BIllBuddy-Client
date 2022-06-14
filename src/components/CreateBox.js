@@ -4,7 +4,7 @@ import { Image } from 'react-native';
 const CreateBoxAcrossContainer = styled.View`
 height: 160px;
 width: 357px;
-margin-left: 16px;
+align-self: center;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
@@ -18,8 +18,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background-color: #F8F8F8;
+background-color: #FFFFFF;
 border-radius: 8px;
+box-shadow: 2px 4px 16px #0646350D;
 `
 
 const CreateBoxTextContainer = styled.Text`
