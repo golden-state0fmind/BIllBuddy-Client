@@ -33,27 +33,26 @@ display: flex;
 flex-direction: column;
 `
 
- function CreateBoxContainer1() {
-    return(
+function CreateBoxContainer1() {
+    return (
         <CreateBoxContainer>
-            <Image source={require('./assets/Expense.png')} />  
+            <Image source={require('./assets/CreateExpense.png')} />
             <CreateBoxTextContainer>Create{"\n"} expense</CreateBoxTextContainer>
         </CreateBoxContainer>
     )
 }
 
 function CreateBoxContainer2() {
-    return(
+    return (
         <CreateBoxContainer>
-            <Image source={require('./assets/Envelope.png')} />  
-            <Image source={require('./assets/Envelope.png')} />  
+            <Image source={require('./assets/CreateGroup.png')} />
             <CreateBoxTextContainer>Create{"\n"} group</CreateBoxTextContainer>
         </CreateBoxContainer>
     )
 }
 
 export function CreateBoxes() {
-    return(
+    return (
         <CreateBoxAcrossContainer>
             <CreateBoxContainer1 />
             <CreateBoxContainer2 />

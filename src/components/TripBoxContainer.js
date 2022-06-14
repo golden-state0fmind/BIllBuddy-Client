@@ -8,13 +8,13 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 margin-left: 16px;
-margin-right: 16px;
+margin-right: 8px;
 margin-top: 14px;
 justify-content: space-between;
 `
 
 export function TripBoxContainer() {
-    return(
+    return (
         <TripBoxOuterContainer>
             <TripBoxHighlight />
             <TripBox />

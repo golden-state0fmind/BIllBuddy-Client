@@ -1,18 +1,14 @@
-import React, { Component } from 'react';
+import React, { useState, Component } from 'react';
 
-import { Text, View, Switch } from 'react-native';
+import { Text, View } from 'react-native';
 import { CreateGroupForm } from '../components/CreateGroupForm';
-
-
+import { ExpensesTab } from '../components/ExpensesTab';
 
 
 export default function ExpensesScreen() {
-    return (
-
-      <View>
-               <CreateGroupForm></CreateGroupForm>
-
-      </View>
-    );
-  }
-;
+  return (
+    <View style={{ flex: 1, backgroundColor: "#fff" }}>
+      <ExpensesTab />
+    </View>
+  );
+};

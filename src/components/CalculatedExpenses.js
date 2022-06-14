@@ -9,11 +9,12 @@ margin-left: 16px;
 margin-right: 16px;
 margin-top: 8px;
 margin-bottom: 8px;
-background-color: #F5F5F5;
+background-color: #FFFFFF;
 align-items: center;
 display: flex;
 flex-direction: row;
 border-radius: 8px;
+box-shadow: 0px 4px #00000040;
 `
 
 const BalanceSummaryContainer = styled.View`
@@ -49,16 +50,16 @@ width: 80.00000000000007px;
 `
 
 export function CalculatedExpenses() {
-    return(
+    return (
         <CalculatedExpensesContainer>
             <BalanceSummaryContainer>
-                <TitleContainer>You owe</TitleContainer>
-                <AmountContainer>$23.25</AmountContainer>
+                <TitleContainer style={{ color: '#B52044' }}>You owe</TitleContainer>
+                <AmountContainer style={{ color: '#B52044' }}>$23.25</AmountContainer>
             </BalanceSummaryContainer>
-            <Image source={require('./assets/Rectangle.png')} />  
+            <Image source={require('./assets/Rectangle.png')} />
             <BalanceSummaryContainer>
-                <TitleContainer>You are owed</TitleContainer>
-                <AmountContainer>$78.35</AmountContainer>
+                <TitleContainer style={{ color: '#008763' }}>You are owed</TitleContainer>
+                <AmountContainer style={{ color: '#008763' }}>$78.35</AmountContainer>
             </BalanceSummaryContainer>
         </CalculatedExpensesContainer>
     )

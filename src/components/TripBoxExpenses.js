@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
-import { Image } from 'react-native';
+import { Image, TouchableOpacity } from 'react-native';
 
-const ExpensesBoxContainer = styled.View`
+const ExpensesBoxContainer = styled(TouchableOpacity)`
 width: 358px;
 height: 106px;
 margin-left: 16px;
@@ -107,7 +107,7 @@ export function TripBoxExpenses() {
                     </TitleContainer>
                     <InfoContainer>
                         <IconContainer>
-                            <Image 
+                            <Image
                                 source={require('./assets/Groups.png')}
                                 style={{ width: 16.48, height: 12.75 }} />
                         </IconContainer>
