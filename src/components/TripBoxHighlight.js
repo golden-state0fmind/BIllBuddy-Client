@@ -1,20 +1,20 @@
 import styled from 'styled-components/native';
+import { TouchableOpacity } from 'react-native';
 
-
-const TripBoxContainer = styled.View`
-height: 168px;
-width: 167px;
+const TripBoxContainer = styled(TouchableOpacity)`
+height: 159px;
+width: 158px;
 border-radius: 8px;
-background-color: #F8F8F8;
+background-color: #FFFFFF;
 display: flex;
 flex-direction: column;
 `
 
 const TripBoxTop = styled.View`
 height: 8px;
-width: 167px;
+width: 158px;
 padding-top: auto;
-background-color: #9E9E9E;
+background-color: #448271;
 border-top-left-radius: 8px;
 border-top-right-radius: 8px;
 `
@@ -54,7 +54,7 @@ width: 143px;
 `
 
 export function TripBoxHighlight() {
-    return(
+    return (
         <TripBoxContainer>
             <TripBoxTop />
             <TripBoxTextContainer>

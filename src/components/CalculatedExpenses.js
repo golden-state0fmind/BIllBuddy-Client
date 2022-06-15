@@ -1,12 +1,12 @@
 import styled from 'styled-components/native';
-import { Image } from 'react-native';
+import { Image, TouchableOpacity } from 'react-native';
 
 
-const CalculatedExpensesContainer = styled.View`
+const CalculatedExpensesContainer = styled(TouchableOpacity)`
 height: 124px;
 width: 358px;
-margin-top: 8px;
-margin-bottom: 8px;
+margin-top: 12px;
+margin-bottom: 12px;
 align-self: center;
 background-color: #FFFFFF;
 align-items: center;

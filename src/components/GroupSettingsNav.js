@@ -11,15 +11,18 @@ margin-left: 16px;
 margin-top: 12px;
 display: flex;
 flex-direction: row;
+align-items: center;
 `
 
 const SortPill = styled(TouchableOpacity)`
 height: 36px;
-width: 165px;
+width: 129px;
 border-radius: 40px;
 background-color: #F5F5F5;
 margin-right: 4px;
 align-items: center;
+flex-direction: row;
+justify-content: space-evenly;
 `
 
 const SettingsText = styled.Text`
@@ -126,6 +129,7 @@ export default function SortModal() {
         <View>
             <SortPill onPress={toggleModal}>
                 <SettingsText>Sort and filter</SettingsText>
+                <Image source={require('./assets/SortArrow.png')} />
             </SortPill>
             <Modal isVisible={isModalVisible}>
                 <SortSettings>

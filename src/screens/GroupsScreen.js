@@ -8,17 +8,17 @@ import { GroupYear } from '../components/GroupYear';
 import { GroupSettingsNav } from '../components/GroupSettingsNav';
 
 export default function GroupScreen() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', backgroundColor: "#fff" }}>
-        <ScrollView>
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', backgroundColor: "#FBFBFB" }}>
+      <ScrollView>
         <GroupSettingsNav />
         <GroupYear>2022</GroupYear>
         <TripBoxContainer />
         <GroupYear>2021</GroupYear>
         <TripBoxContainer />
-        </ScrollView>
-        <AddGroupBar />
-      </View>
-    );
-  }
+      </ScrollView>
+      <AddGroupBar />
+    </View>
+  );
+}
 ;

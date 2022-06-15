@@ -1,17 +1,19 @@
 import styled from 'styled-components/native';
-import { Image } from 'react-native';
+import { Image, TouchableOpacity } from 'react-native';
 
 const CreateBoxAcrossContainer = styled.View`
 height: 160px;
 width: 357px;
 align-self: center;
+margin-top: 12px;
+margin-bottom: 12px;
 display: flex;
 flex-direction: row;
 align-items: flex-start;
 justify-content: space-between;
 `
 
-const CreateBoxContainer = styled.View`
+const CreateBoxContainer = styled(TouchableOpacity)`
 height: 160px;
 width: 167px;
 display: flex;

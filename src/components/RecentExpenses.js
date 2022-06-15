@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { TripBoxExpensesFinal } from './TripBoxEspensesFinal';
-import { TripBoxExpenses } from './TripBoxExpenses';
+import { TripBoxExpensesFinal } from './TripBoxEspensesFinalOld';
+import { TripBoxExpenses } from './TripBoxExpensesOld';
 
 const RecentExpensesContainer = styled.View`
 height: 293px;
@@ -23,7 +23,7 @@ margin-bottom: 8px;
 `
 
 export function RecentExpenses() {
-    return(
+    return (
         <RecentExpensesContainer>
             <RecentTitle>Recent</RecentTitle>
             <TripBoxExpensesFinal />

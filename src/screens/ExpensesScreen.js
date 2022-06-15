@@ -7,7 +7,7 @@ import { ExpensesTab } from '../components/ExpensesTab';
 
 export default function ExpensesScreen() {
   return (
-    <View style={{ flex: 1, backgroundColor: "#fff" }}>
+    <View style={{ flex: 1, backgroundColor: "#FBFBFB" }}>
       <ExpensesTab />
     </View>
   );

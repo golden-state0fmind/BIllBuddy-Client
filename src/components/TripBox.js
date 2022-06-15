@@ -1,10 +1,11 @@
 import styled from 'styled-components/native';
+import { TouchableOpacity } from 'react-native';
 
-const TripBoxContainer = styled.View`
-height: 168px;
-width: 167px;
+const TripBoxContainer = styled(TouchableOpacity)`
+height: 159px;
+width: 158px;
 border-radius: 8px;
-background-color: #F8F8F8;
+background-color: #FFFFFF;
 display: flex;
 flex-direction: column;
 margin-bottom: 24px;
@@ -45,7 +46,7 @@ width: 143px;
 `
 
 export function TripBox() {
-    return(
+    return (
         <TripBoxContainer>
             <TripBoxTextContainer>
                 <TripBoxDateContainer>Apr 14 - 17</TripBoxDateContainer>
