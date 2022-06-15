@@ -2,120 +2,149 @@ import styled from 'styled-components/native';
 import { Image, TouchableOpacity } from 'react-native';
 
 const ExpensesBoxContainer = styled(TouchableOpacity)`
-width: 358px;
 height: 106px;
-margin-left: 16px;
-margin-right: 16px;
-margin-top: 8px;
-margin-bottom: 8px;
-display: flex;
-background-color: #F5F5F5;
+width: 342px;
 border-radius: 8px;
+background-color: #FFFFFF;
+display: flex;
+margin-top: 10px;
+margin-bottom: 10px;
+align-self: center;
+box-shadow: 2px 4px 16px #0646350D;
 `
 
 const ExpensesBoxInnerContainer = styled.View`
-height: 120px;
-width: 358px;
-padding-top: 15.5px;
-padding-bottom: 15.5px;
-`
-
-const HeaderContainer = styled.View`
-height: 46px;
-width: 326px;
-margin-top: 6px;
+height: 48px;
+width: 310px;
+flex-direction: column;
 margin-left: 16px;
 margin-right: 16px;
-flex-direction:row;
+margin-top: 29px;
+margin-bottom: 29px;
 `
 
-const TitleContainer = styled.View`
-height: 46px;
-width: 237px;
-margin-right: 12px;
+const ExpensesBoxUpperContainer = styled.View`
+height: 24px;
+width: 310px;
+justify-content: space-between;
+flex-direction: row;
+
 `
 
-const ExpensesBoxTitle = styled.Text`
-width: 237px;
-height: 26px;
-font-family: 'System';
-font-style: normal;
-font-weight: 700;
-font-size: 21px;
-letter-spacing: -0.5px;
-color: #212121;
-`
-
-const ExpensesBoxGroupTitle = styled.Text`
-width: 237px;
-height: 20px;
-font-family: 'System';
-font-style: normal;
-font-weight: 700;
-font-size: 13.5px;
-letter-spacing: -0.5px;
-color: #212121;
-`
-
-const InfoContainer = styled.View`
-height: 46px;
-width: 77px;
-display: flex;
-align-items: baseline;
+const ExpensesBoxLowerContainer = styled.View`
+height: 24px;
+width: 310px;
+justify-content: space-between;
 flex-direction: row;
 `
 
-const IconContainer = styled.View`
-height: 12.75px;
-width: 16.48px;
-margin-left: 12.75px;
-margin-right: 8.77px;
-margin-bottom: 30.62px;
-display: flex;
-`
-
-const DateContainer = styled.Text`
-height: 17px;
-width: 39px;
-margin-bottom: 29px;
-font-family: 'System';
-font-size: 14px;
+const ExpenseText = styled.Text`
+font-family: DM Sans;
+font-size: 17px;
+font-weight: 700, bold;
 text-align: left;
+color: #424242;
 `
 
-const FriendsContainer = styled.Text`
-width: 326px;
-height: 20px;
-font-family: 'System';
+const OweText = styled.Text`
+font-family: DM Sans;
+font-size: 14px;
 font-weight: 400;
-font-size: 13.5px;
-color: #BDBDBD;
-margin-top: 8px;
-margin-bottom: 21.5px;
-margin-left: 16px;
-margin-right: 16px;
+text-align: right;
+color: #B52044;
 `
 
-export function TripBoxExpenses() {
+const OwedText = styled.Text`
+font-family: DM Sans;
+font-size: 14px;
+font-weight: 400;
+text-align: right;
+color: #448271;
+`
+
+const InfoText = styled.Text`
+font-family: DM Sans;
+font-size: 14px;
+font-weight: 400;
+text-align: left;
+color: #757575;
+`
+
+const OwePriceText = styled.Text`
+font-family: DM Sans;
+font-size: 21px;
+font-weight: 700, bold;
+text-align: right;
+color: #B52044;
+`
+
+const OwedPriceText = styled.Text`
+font-family: DM Sans;
+font-size: 21px;
+font-weight: 700, bold;
+text-align: right;
+color: #008763;
+`
+const ExpenseBoxOuterContainer = styled.View`
+width: 390px;
+flex-direction: column;
+align-self: center;
+`
+
+const TopText = styled.Text`
+font-family: DM Sans;
+font-size: 21px;
+font-weight: 700, bold;
+text-align: left;
+color: #000000;
+margin-bottom: 10px;
+margin-top: 10px;
+width: 342px;
+height: 24px;
+align-self: center;
+`
+
+export function ExpenseBox1() {
     return (
         <ExpensesBoxContainer>
             <ExpensesBoxInnerContainer>
-                <HeaderContainer>
-                    <TitleContainer>
-                        <ExpensesBoxTitle>Omelettes</ExpensesBoxTitle>
-                        <ExpensesBoxGroupTitle>San Fran Trip!</ExpensesBoxGroupTitle>
-                    </TitleContainer>
-                    <InfoContainer>
-                        <IconContainer>
-                            <Image
-                                source={require('./assets/Groups.png')}
-                                style={{ width: 16.48, height: 12.75 }} />
-                        </IconContainer>
-                        <DateContainer>02/14</DateContainer>
-                    </InfoContainer>
-                </HeaderContainer>
-                <FriendsContainer>Anna • Rochelle • Roy</FriendsContainer>
+                <ExpensesBoxUpperContainer>
+                    <ExpenseText>Steak dinner</ExpenseText>
+                    <OweText>You owe</OweText>
+                </ExpensesBoxUpperContainer>
+                <ExpensesBoxLowerContainer>
+                    <InfoText>Trip to AZ • Apr 14</InfoText>
+                    <OwePriceText>$11.75</OwePriceText>
+                </ExpensesBoxLowerContainer>
             </ExpensesBoxInnerContainer>
         </ExpensesBoxContainer>
+    )
+}
+
+
+export function ExpenseBox2() {
+    return (
+        <ExpensesBoxContainer>
+            <ExpensesBoxInnerContainer>
+                <ExpensesBoxUpperContainer>
+                    <ExpenseText>Steak dinner</ExpenseText>
+                    <OwedText>You are owed</OwedText>
+                </ExpensesBoxUpperContainer>
+                <ExpensesBoxLowerContainer>
+                    <InfoText>Trip to AZ • Apr 14</InfoText>
+                    <OwedPriceText>$11.75</OwedPriceText>
+                </ExpensesBoxLowerContainer>
+            </ExpensesBoxInnerContainer>
+        </ExpensesBoxContainer>
+    )
+}
+
+export function ExpenseBoxes() {
+    return (
+        <ExpenseBoxOuterContainer>
+            <TopText>Recent</TopText>
+            <ExpenseBox1 />
+            <ExpenseBox2 />
+        </ExpenseBoxOuterContainer>
     )
 }

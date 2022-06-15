@@ -10,4 +10,5 @@ font-size: 17px;
 font-weight: 700;
 text-align: center;
 color: #9E9E9E;
+margin-bottom: 24px;
 `

@@ -1,11 +1,9 @@
 import styled from 'styled-components/native';
-import { Image } from 'react-native';
-import groups from './assets/Groups.png';
+import { Image, TouchableOpacity } from 'react-native';
 
-const ExpensesBoxContainer = styled.View`
+const ExpensesBoxContainer = styled(TouchableOpacity)`
 width: 358px;
-height: 151px;
-border: 2px #BDBDBD;
+height: 106px;
 margin-left: 16px;
 margin-right: 16px;
 margin-top: 8px;
@@ -85,19 +83,6 @@ font-size: 14px;
 text-align: left;
 `
 
-const ExpensesContainer = styled.Text`
-width: 326px;
-height: 26px;
-font-family: 'System';
-font-weight: 400;
-font-size: 17px;
-color: #7A7A7A;
-margin-top: 8px;
-margin-bottom: 8px;
-margin-left: 16px;
-margin-right: 16px;
-`
-
 const FriendsContainer = styled.Text`
 width: 326px;
 height: 20px;
@@ -105,30 +90,30 @@ font-family: 'System';
 font-weight: 400;
 font-size: 13.5px;
 color: #BDBDBD;
+margin-top: 8px;
 margin-bottom: 21.5px;
 margin-left: 16px;
 margin-right: 16px;
 `
 
-export function TripBoxExpensesFinal() {
+export function TripBoxExpenses() {
     return (
         <ExpensesBoxContainer>
             <ExpensesBoxInnerContainer>
                 <HeaderContainer>
                     <TitleContainer>
-                        <ExpensesBoxTitle>Steak dinner</ExpensesBoxTitle>
+                        <ExpensesBoxTitle>Omelettes</ExpensesBoxTitle>
                         <ExpensesBoxGroupTitle>San Fran Trip!</ExpensesBoxGroupTitle>
                     </TitleContainer>
                     <InfoContainer>
                         <IconContainer>
-                            <Image 
+                            <Image
                                 source={require('./assets/Groups.png')}
                                 style={{ width: 16.48, height: 12.75 }} />
                         </IconContainer>
                         <DateContainer>02/14</DateContainer>
                     </InfoContainer>
                 </HeaderContainer>
-                <ExpensesContainer>Everyone owes you a total of $33.56</ExpensesContainer>
                 <FriendsContainer>Anna • Rochelle • Roy</FriendsContainer>
             </ExpensesBoxInnerContainer>
         </ExpensesBoxContainer>

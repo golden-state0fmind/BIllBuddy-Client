@@ -3,13 +3,10 @@ import { TripBoxHighlight } from './TripBoxHighlight';
 import { TripBox } from './TripBox';
 
 const TripBoxOuterContainer = styled.View`
-width: 384px;
-display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-margin-left: 16px;
-margin-right: 8px;
-margin-top: 14px;
+width: 342px;
+align-self: center;
 justify-content: space-between;
 `
 

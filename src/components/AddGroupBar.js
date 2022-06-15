@@ -1,11 +1,22 @@
 import styled from 'styled-components/native';
+import { TouchableOpacity, Image } from 'react-native';
 
-const AddGroupContainer = styled.View`
+const AddGroupContainer = styled(TouchableOpacity)`
 height: 48px;
-width: 420px;
-background-color: #616161;
-align-items: center;
+width: 342px;
+background-color: #448271;
 margin-top: auto;
+margin-bottom: 16px;
+align-self: center;
+border-radius: 48px;
+align-items: center;
+`
+
+const AddGroupInnerContainer = styled.View`
+flex-direction: row;
+height: 23px;
+margin-top: 12px;
+align-items: center;
 `
 
 const AddGroupText = styled.Text`
@@ -20,9 +31,12 @@ color: #F5F5F5;
 `
 
 export function AddGroupBar() {
-    return(
+    return (
         <AddGroupContainer>
-            <AddGroupText>Add Group</AddGroupText>
+            <AddGroupInnerContainer>
+                <Image source={require('./assets/Cross.png')} />
+                <AddGroupText>Add Group</AddGroupText>
+            </AddGroupInnerContainer>
         </AddGroupContainer>
     )
 }
