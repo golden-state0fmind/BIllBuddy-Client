@@ -6,6 +6,7 @@ import { TripBox } from '../components/TripBox';
 import { TripBoxHighlight } from '../components/TripBoxHighlight';
 import { GroupYear } from '../components/GroupYear';
 import { GroupSettingsNav } from '../components/GroupSettingsNav';
+import { TitleText } from '../components/TitleText';
 
 export default function GroupScreen() {
   return (
