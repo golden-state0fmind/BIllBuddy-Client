@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import { Image, TouchableOpacity } from 'react-native';
 
 
-const CalculatedExpensesContainer = styled(TouchableOpacity)`
+const CalculatedExpensesContainer = styled.View`
 height: 124px;
 width: 358px;
 margin-top: 12px;
@@ -17,7 +17,7 @@ box-shadow: 0px 4px #00000040;
 
 `
 
-const BalanceSummaryContainer = styled.View`
+const BalanceSummaryContainer = styled(TouchableOpacity)`
 height: 104px;
 width: 178.5px;
 `

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components/native';
-import { Text, View, StyleSheet, Switch, FlatList, SafeAreaView, TouchableOpacity, Dimensions } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 
 const TabContainer = styled.View`
 height: 56px;
@@ -18,10 +18,7 @@ width: 160px;
 border-radius: 30px;
 padding: 12px;
 margin-top: 6px;
-background: ${props => (props.status ? '#FFFFFF' : '#EEEEEE')};
-&.status {
-    background-color: #FFFFFF;
-}
+background: ${(props) => (props.status ? "#FFFFFF" : "#EEEEEE")};
 `
 
 const TabText = styled.Text`
@@ -29,7 +26,7 @@ font-family: DM Sans;
 font-size: 17px;
 font-weight: 700;
 text-align: center;
-color: ${props => (props.status ? '#3D7566' : '#BDBDBD')};
+color: #BDBDBD;
 &.status {
     color: #3D7566;
 }
