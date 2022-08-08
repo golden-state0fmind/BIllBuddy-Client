@@ -71,7 +71,7 @@ height: 104px;
 width: 350px;
 `
 
-const TextInnerContainer = styled.View`
+const TextInnerContainer = styled(TouchableOpacity)`
 height: 48px;
 width: 300px;
 justify-content: space-between;

@@ -6,6 +6,7 @@ import HomeScreen from '../screens/HomeScreen.js';
 import ExpensesScreen from '../screens/ExpensesScreen.js';
 import GroupsScreen from '../screens/GroupsScreen.js';
 import AccountScreen from '../screens/AccountScreen.js';
+import BalanceScreen from '../screens/BalanceScreen.js';
 
 const Tab = createBottomTabNavigator();
 
@@ -60,6 +61,19 @@ export default function BottomNav() {
           component={AccountScreen}
           options={{
             tabBarLabel: 'Account',
+            tabBarIcon: ({ color, size }) => (
+              <Image
+                source={require('../components/assets/Account.png')}
+                style={{ width: 20, height: 20, tintColor: color }}
+              />
+            )
+          }}
+        />
+        <Tab.Screen
+          name="Balance"
+          component={BalanceScreen}
+          options={{
+            tabBarLabel: 'Balance',
             tabBarIcon: ({ color, size }) => (
               <Image
                 source={require('../components/assets/Account.png')}
