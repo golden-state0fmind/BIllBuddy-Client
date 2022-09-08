@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
   tabBarLabel: {
     fontSize: 17,
     fontWeight: 'bold',
-    width: 160,
-    paddingTop: 12,
+    width: 144,
+    paddingTop: 6,
     height: 45,
     textAlign: 'center',
     color: '#BDBDBD',
@@ -42,9 +42,12 @@ const styles = StyleSheet.create({
   },
   tabBarLabelActive: {
     color: '#3D7566',
+    backgroundColor: '#EEEEEE',
     borderColor: '#EEEEEE',
+    overflow: 'hidden',
     borderWidth: 5,
-    borderRadius: 30
+    marginLeft: 10,
+    borderRadius: 21
   }
 });
 
@@ -59,17 +62,20 @@ const styles2 = StyleSheet.create({
   tabBarLabel: {
     fontSize: 17,
     fontWeight: 'bold',
-    width: 160,
+    width: 144,
     height: 45,
-    borderRadius: 30,
-    paddingTop: 12,
+    paddingTop: 9,
     textAlign: 'center',
     color: '#BDBDBD',
   },
   tabBarLabelActive: {
     color: '#3D7566',
-    backgroundColor: '#FFFFFF',
-    borderRadius: 30
+    backgroundColor: '#EEEEEE',
+    borderColor: '#EEEEEE',
+    overflow: 'hidden',
+    borderWidth: 5,
+    marginRight: 10,
+    borderRadius: 21
   }
 });
 
@@ -88,7 +94,7 @@ const TabNavigator = createMaterialTopTabNavigator(
     ExpensesCompleted: {
       screen: ExpensesCompletedScreen,
       navigationOptions: {
-        tabBarLabel: ({ focused }) => <ExpensesLabel2 title={"You owe"} focused={focused} />
+        tabBarLabel: ({ focused }) => <ExpensesLabel2 title={"You are owed"} focused={focused} />
       },
     },
   },
@@ -100,10 +106,8 @@ const TabNavigator = createMaterialTopTabNavigator(
         marginBottom: 20,
         width: 320,
         alignSelf: 'center',
-        borderRadius: 30
-      },
-      tabStyle: {
-        borderRadius: 30
+        borderRadius: 30,
+        justifyContent: 'center'
       },
       indicatorStyle: {
         backgroundColor: 'transparent'

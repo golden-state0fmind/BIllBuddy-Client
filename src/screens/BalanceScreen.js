@@ -74,7 +74,7 @@ const TabNavigator = createMaterialTopTabNavigator(
                 marginTop: 48,
                 marginBottom: 20,
                 width: 390,
-                alignSelf: 'center',
+                alignSelf: 'center'
             },
             indicatorStyle: {
                 backgroundColor: '#B52044'
