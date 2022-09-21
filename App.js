@@ -30,13 +30,18 @@ class App extends Component {
 
     return (
       <>
-      <NavigationContainer>
+      {/* <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="BottomNav" component={BottomNav} />
+        
           <Stack.Screen name="HomeScreen" component={HomeScreen} />
+          
           <Stack.Screen name="ExpensesScreen" component={ExpensesScreen} />
           <Stack.Screen name="GroupsScreen" component={GroupsScreen} />
         </Stack.Navigator>
+        
+      </NavigationContainer> */}
+      <NavigationContainer>
+        <BottomNav/>
       </NavigationContainer>
    </> );
   }

@@ -6,6 +6,7 @@ import HomeScreen from '../screens/HomeScreen.js';
 import ExpensesScreen from '../screens/ExpensesScreen.js';
 import GroupsScreen from '../screens/GroupsScreen.js';
 import AccountScreen from '../screens/AccountScreen.js';
+import { HomeStackScreen } from '../navigation/Stacks.js';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,9 +15,10 @@ export default function BottomNav() {
     <>
       <Tab.Navigator>
         <Tab.Screen
-          name="Home"
-          component={HomeScreen}
+          name="HomeStack"
+          component={HomeStackScreen}
           options={{
+            headerShown: false,
             tabBarLabel: 'Home',
             tabBarIcon: ({ color, size }) => (
               <Image
