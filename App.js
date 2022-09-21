@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
@@ -14,6 +15,7 @@ import GroupsScreen from "./src/screens/GroupsScreen";
 import AccountScreen from "./src/screens/AccountScreen";
 import CreateGroupScreen from "./src/screens/CreateGroupScreen";
 
+
 const Tab = createBottomTabNavigator();
 
 const Stack = createNativeStackNavigator();
@@ -21,9 +23,9 @@ const Stack = createNativeStackNavigator();
 
 
 class App extends Component {
-  
-  // static ContextType = MyContext;
-  
+
+  static ContextType = MyContext;
+
 
   render() {
     // return <BottomNav />;

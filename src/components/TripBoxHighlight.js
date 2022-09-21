@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import { TouchableOpacity } from 'react-native';
+import { TouchableOpacity, Image, Text } from 'react-native';
 
 const TripBoxContainer = styled(TouchableOpacity)`
 height: 159px;
@@ -53,6 +53,15 @@ height: 24px;
 width: 143px;
 `
 
+const IconsContainer = styled.View`
+height: 24px;
+width: 134px;
+border-radius: 0px;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+`
+
 export function TripBoxHighlight() {
     return (
         <TripBoxContainer>
@@ -60,6 +69,13 @@ export function TripBoxHighlight() {
             <TripBoxTextContainer>
                 <TripBoxDateContainer>Mar 14 - 17</TripBoxDateContainer>
                 <TripBoxNameContainer>San Fran Trip!</TripBoxNameContainer>
+                <IconsContainer>
+                    <Image source={require('./assets/ProfilePic1.png')} />
+                    <Image source={require('./assets/ProfilePic6.png')} />
+                    <Image source={require('./assets/ProfilePic2.png')} />
+                    <Image source={require('./assets/ProfilePic4.png')} />
+                    <Text>+1</Text>
+                </IconsContainer>
             </TripBoxTextContainer>
         </TripBoxContainer>
     )

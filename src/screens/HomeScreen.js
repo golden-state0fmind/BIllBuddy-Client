@@ -11,6 +11,7 @@ import { CreateBoxes } from '../components/CreateBox';
 import { PrimaryButton } from '../components/Buttons';
 import { RecentExpenses } from '../components/RecentExpenses';
 import { ExpenseBoxes } from '../components/TripBoxExpenses';
+import { TitleText } from '../components/TitleText';
 
 export default function HomeScreen() {
   return (

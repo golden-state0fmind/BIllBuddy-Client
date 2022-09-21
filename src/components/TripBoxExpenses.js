@@ -127,11 +127,11 @@ export function ExpenseBox2() {
         <ExpensesBoxContainer>
             <ExpensesBoxInnerContainer>
                 <ExpensesBoxUpperContainer>
-                    <ExpenseText>Steak dinner</ExpenseText>
+                    <ExpenseText>Fancy Schmancy</ExpenseText>
                     <OwedText>You are owed</OwedText>
                 </ExpensesBoxUpperContainer>
                 <ExpensesBoxLowerContainer>
-                    <InfoText>Trip to AZ • Apr 14</InfoText>
+                    <InfoText>Group name • Feb 14</InfoText>
                     <OwedPriceText>$11.75</OwedPriceText>
                 </ExpensesBoxLowerContainer>
             </ExpensesBoxInnerContainer>
