@@ -1,5 +1,7 @@
 import styled from 'styled-components/native';
 import { Image, TouchableOpacity } from 'react-native';
+import ExpensesScreen from '../screens/ExpensesScreen';
+import { useNavigation } from '@react-navigation/native';
 
 const CreateBoxAcrossContainer = styled.View`
 height: 160px;
@@ -37,17 +39,22 @@ flex-direction: column;
 `
 
 function CreateBoxContainer1() {
+    const navigation = useNavigation();
     return (
-        <CreateBoxContainer>
-            <Image source={require('./assets/CreateExpense.png')} />
+        <CreateBoxContainer onPress={() => navigation.navigate('ExpensesScreen')} >
+        
+            <Image source={require('./assets/CreateExpense.png')} 
+            />
             <CreateBoxTextContainer>Create{"\n"} expense</CreateBoxTextContainer>
         </CreateBoxContainer>
     )
 }
 
 function CreateBoxContainer2() {
+    const navigation = useNavigation();
     return (
-        <CreateBoxContainer>
+        
+        <CreateBoxContainer onPress={() => navigation.navigate('GroupsScreen')} >
             <Image source={require('./assets/CreateGroup.png')} />
             <CreateBoxTextContainer>Create{"\n"} group</CreateBoxTextContainer>
         </CreateBoxContainer>
