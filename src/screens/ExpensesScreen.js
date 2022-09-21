@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     borderColor: '#EEEEEE',
     overflow: 'hidden',
     borderWidth: 5,
-    marginLeft: 10,
+    marginLeft: 6,
     borderRadius: 21
   }
 });
@@ -75,7 +75,7 @@ const styles2 = StyleSheet.create({
     borderColor: '#EEEEEE',
     overflow: 'hidden',
     borderWidth: 5,
-    marginRight: 10,
+    marginRight: 6,
     borderRadius: 21
   }
 });
@@ -103,7 +103,7 @@ const TabNavigator = createMaterialTopTabNavigator(
     tabBarOptions: {
       style: {
         backgroundColor: "#E0E0E0",
-        width: 'auto',
+        width: '144',
         marginTop: 48,
         marginBottom: 20,
         width: 320,
