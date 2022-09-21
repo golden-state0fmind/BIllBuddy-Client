@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     width: 144,
     paddingTop: 6,
     height: 45,
+    paddingTop: 9,
     textAlign: 'center',
     color: '#BDBDBD',
     marginLeft: 6
@@ -102,6 +103,7 @@ const TabNavigator = createMaterialTopTabNavigator(
     tabBarOptions: {
       style: {
         backgroundColor: "#E0E0E0",
+        width: 'auto',
         marginTop: 48,
         marginBottom: 20,
         width: 320,
