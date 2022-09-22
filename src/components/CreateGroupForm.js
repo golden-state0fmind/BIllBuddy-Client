@@ -29,7 +29,11 @@ margin: 1px;
 display: flex;
 `
 
-
+const PhotoContainer = styled.View`
+margin: 16px;
+margin-top: 70px ;
+display: flex ;
+`
 
 const FormContainer = styled.View`
 margin: 16px;
@@ -117,6 +121,7 @@ export function CreateGroupForm() {
             <LabelText>Group Name</LabelText>
             <InputText
                 placeholder="LA Roadtrip, knitting club, bike buddies..."
+
             />
             <LabelText>Dates</LabelText>
             <DateEntry
@@ -128,7 +133,9 @@ export function CreateGroupForm() {
                 numberOfLines={4}
                 placeholder="Start adding names here" >
             </InputTextArea>
+            <PhotoContainer>
             <PhotoAdder />
+            </PhotoContainer>
         </FormContainer>
     )
 }

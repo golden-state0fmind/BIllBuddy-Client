@@ -7,7 +7,7 @@ import HomeScreen from "../screens/HomeScreen";
 import AccountScreen from "../screens/AccountScreen";
 import CreateGroupScreen from "../screens/CreateGroupScreen";
 import ExpensesScreen from "../screens/ExpensesScreen";
-import GroupScreen from "../screens/GroupsScreen";
+import GroupsScreen from "../screens/GroupsScreen";
 
 const HomeStack = createStackNavigator();
 
@@ -15,8 +15,11 @@ const HomeStack = createStackNavigator();
 
 export function HomeStackScreen() {
     return (
-<HomeStack.Navigator>
-    <HomeStack.Screen name="HomeScreen" component={HomeScreen} />
+<HomeStack.Navigator    
+ >
+    <HomeStack.Screen name="HomeScreen" component={HomeScreen} 
+    
+    />
     <HomeStack.Screen
       name="AccountScreen"
       component={AccountScreen}
@@ -30,8 +33,8 @@ export function HomeStackScreen() {
       component={ExpensesScreen}
     />
         <HomeStack.Screen
-      name="GroupScreen"
-      component={GroupScreen}
+      name="GroupsScreen"
+      component={GroupsScreen}
     />
   </HomeStack.Navigator>
 

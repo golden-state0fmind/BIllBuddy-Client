@@ -41,7 +41,7 @@ flex-direction: column;
 function CreateBoxContainer1() {
     const navigation = useNavigation();
     return (
-        <CreateBoxContainer onPress={() => navigation.navigate('ExpensesScreen')} >
+        <CreateBoxContainer onPress={() => navigation.navigate('CreateGroupScreen')} >
         
             <Image source={require('./assets/CreateExpense.png')} 
             />
